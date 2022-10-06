@@ -9,7 +9,6 @@ const DetailsScreenContainer = ({ navigation, route }) => {
     const { id, mediaType } = route.params;
     const [details, setDetails] = useState();
 
-    // Call the API to get the details
     useEffect(() => {
         setIsLoading(true);
         getDetails(mediaType, id).then(res => {

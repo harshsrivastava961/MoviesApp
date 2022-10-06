@@ -10,14 +10,11 @@ const SearchTab = ({ navigation }) => {
     const [results, setResults] = useState([]);
     const [mediaType, setMediaType] = useState('');
 
-    // Call the API to get the search results
     const callSearchResults = (selectedMediaType, inputText, isError) => {
         if (isError) {
-            // Do nothing if the input is invalid
             setResults([]);
             setIsLoading(false);
         } else {
-            // Call the API to get the search results
             setIsLoading(true);
             setMediaType(selectedMediaType);
             getSearchResults(selectedMediaType, inputText).then(res => {

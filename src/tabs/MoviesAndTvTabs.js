@@ -17,7 +17,6 @@ const MoviesAndTvTabs = ({ navigation, mediaType }) => {
     } else {
         sortOptions = ['airing_today', "on_the_air", "popular", "top_rated"];
     }
-    // Call the API to get the list results
     useEffect(() => {
         setIsLoading(true);
         getMediaList(mediaType, sortType, page).then(res => {
