@@ -1,18 +1,3 @@
-// import { StyleSheet, Text, View } from 'react-native'
-// import React from 'react'
-
-// const DetailsScreenContainer = () => {
-//   return (
-//     <View>
-//       <Text>DetailsScreenContainer</Text>
-//     </View>
-//   )
-// }
-
-// export default DetailsScreenContainer
-
-// const styles = StyleSheet.create({})
-
 import { Image, Text, Center, VStack, Heading, ScrollView } from "native-base";
 import { useState, useEffect } from 'react';
 import { IMAGE_BASE_URL } from "../config/api_config";
