@@ -13,7 +13,7 @@ const Item = ({ navigation, item, mediaType }) => {
                     <Heading fontSize={"md"}>{item.original_name ? item.original_name : item.original_title}</Heading>
                     <Text>Popularity: {item.popularity}</Text>
                     <Text>Release Date: {item.release_date}</Text>
-                    <Button maxW={"90%"} onPress={() => navigation.navigate("Detail", { id: item.id, mediaType: item.media_type ? item.media_type : mediaType })}>More Details
+                    <Button maxW={"90%"} onPress={() => navigation.navigate("Details", { id: item.id, mediaType: item.media_type ? item.media_type : mediaType })}>More Details
                     </Button>
                 </VStack>
             </Box>

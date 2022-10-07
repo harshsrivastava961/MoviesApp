@@ -12,8 +12,17 @@ const Navigation = () => {
     return (
         <NavigationContainer>
             <Stack.Navigator>
+            <Stack.Screen name="Home" component={HomeScreen} options={{
+                    title: "Movies App",
+                    headerStyle: {
+                        backgroundColor: "#2c3e50",
+                    },
+                    headerTitleStyle: {
+                        color: "#fff",
+                    },
+                }} />
 
-                <Stack.Screen name="Home" component={HomeScreen} options={{
+                <Stack.Screen name="Details" component={DetailsScreen} options={{
                     title: "Movies App",
                     headerStyle: {
                         backgroundColor: "#fff",
@@ -22,17 +31,6 @@ const Navigation = () => {
                         color: "#000",
                     },
                     headerBackTitle: "Back to List",
-
-                }} />
-
-                <Stack.Screen name="Details" component={DetailsScreen} options={{
-                    title: "Movies App",
-                    headerStyle: {
-                        backgroundColor: "#2c3e50",
-                    },
-                    headerTitleStyle: {
-                        color: "#fff",
-                    },
                 }} />
             </Stack.Navigator>
         </NavigationContainer>
